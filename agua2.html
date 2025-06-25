@@ -50,9 +50,8 @@
       max-width: 500px;
       border-radius: 12px;
       overflow: hidden;
-      box-shadow:
-        0 15px 25px rgba(0, 0, 0, 0.5),
-        0 10px 10px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5),
+                  0 10px 10px rgba(0, 0, 0, 0.3);
     }
 
     .header-image-container img {
@@ -67,9 +66,8 @@
 
     .header-image-container:hover img {
       transform: scale(1.03);
-      box-shadow:
-        0 20px 30px rgba(0, 0, 0, 0.6),
-        0 15px 15px rgba(0, 0, 0, 0.4);
+      box-shadow: 0 20px 30px rgba(0, 0, 0, 0.6),
+                  0 15px 15px rgba(0, 0, 0, 0.4);
     }
 
     .header-image-container::after {
@@ -132,7 +130,6 @@
       margin-top: 40px;
     }
 
-    /* Imágenes de las secciones */
     .section-image {
       display: block;
       max-width: 100%;
@@ -148,9 +145,28 @@
       transform: scale(1.03);
       box-shadow: 0 20px 35px rgba(0, 0, 0, 0.6);
     }
+
+    /* Estilo del botón regresar */
+    .btn-regresar {
+      display: inline-block;
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px 24px;
+      font-size: 1em;
+      text-align: center;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .btn-regresar:hover {
+      background-color: #388E3C;
+    }
   </style>
 </head>
 <body>
+
   <header>
     <h1>Protejamos el Agua</h1>
     <p>Una misión que empieza contigo</p>
@@ -175,17 +191,16 @@
         vida de millones de seres vivos.
       </p>
     
-        <h2>Contribuye a una cultura del agua</h2>
-        <p>Habla con tu familia, vecinos y amigos. Participa en campañas educativas, comparte información en redes sociales y apoya leyes que protejan nuestras fuentes hídricas.</p>
-       <div style="text-align: center; margin: 2rem 0;">
-        <h2>¿Que podemos hacer para cuidar el agua?</h2>
+      <h2>Contribuye a una cultura del agua</h2>
+      <p>Habla con tu familia, vecinos y amigos. Participa en campañas educativas, comparte información en redes sociales y apoya leyes que protejan nuestras fuentes hídricas.</p>
+      <div style="text-align: center; margin: 2rem 0;">
+        <h2>¿Qué podemos hacer para cuidar el agua?</h2>
         <iframe width="560" height="315" src="¿QUÉ PODEMOS HACER PARA CUIDAR EL AGUA_ 🌎💧💡.mp4"
           title="¿Qué podemos hacer para cuidar el agua?" frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen>
         </iframe>
       </div>
-      </section>
     </section>
 
     <section>
@@ -195,10 +210,7 @@
         <li>No usar el inodoro como papelera.</li>
         <li>Instalar dispositivos ahorradores en grifos y regaderas.</li>
         <li>Utilizar la lavadora solo con cargas completas.</li>
-        <li>
-          Reutilizar el agua siempre que sea posible (como el agua de lavar frutas
-          para regar plantas).
-        </li>
+        <li>Reutilizar el agua siempre que sea posible (como el agua de lavar frutas para regar plantas).</li>
       </ul>
       <img class="section-image" src="https://www.caosyciencia.com/wp-content/uploads/2025/01/como-ahorrar-agua-en-casa-y-escuela-1024x647.jpg" alt="Cuidado en casa">
     </section>
@@ -207,15 +219,20 @@
       <h2>Contribuye a una cultura del agua</h2>
       <p>
         Habla con tu familia, vecinos y amigos. Participa en campañas educativas,
-        comparte información en redes sociales y apoya leyes que protejan
-        nuestras fuentes hídricas.
+        comparte información en redes sociales y apoya leyes que protejan nuestras fuentes hídricas.
       </p>
       <img class="section-image" src="https://see.michoacan.gob.mx/wp-content/uploads/2024/04/cuidemosagua.jpg" alt="Cuidado en escuela">
     </section>
+
+    <!-- Botón de Regresar -->
+    <div style="text-align: center; margin: 40px 0;">
+      <button onclick="history.back()" class="btn-regresar">← Regresar</button>
+    </div>
   </div>
 
   <footer>
-    &copy; 2025 Protejamos el Agua | Hecho con conciencia ambiental 💧
-  </footer>
-</body>
+    &copy; 2025 Protejamos el Agua | Hecho con conciencia ambiental
+  </body>
 </html>
+
+  
