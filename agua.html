@@ -58,7 +58,7 @@
     .seccion img {
       width: 100%;
       max-width: 300px;
-      height:300px;
+      height: 300px;
       object-fit: cover;
       border-radius: 8px;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -89,6 +89,21 @@
       .seccion img {
         margin-bottom: 15px;
       }
+    }
+
+    .boton-regresar {
+      background-color: #19d247;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+     
+      cursor: pointer;
+      margin-bottom: 30px;
+    }
+
+    .boton-regresar:hover {
+      background-color: #11bb19;
     }
   </style>
 </head>
@@ -147,6 +162,11 @@
       </div>
     </section>
 
+    <!-- Botón de regresar -->
+    <div style="text-align: center;">
+      <button onclick="history.back()" class="boton-regresar">⬅ Regresar</button>
+    </div>
+
   </div>
 
   <footer>
@@ -155,3 +175,4 @@
 
 </body>
 </html>
+     
